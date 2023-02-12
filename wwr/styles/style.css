@@ -1,5 +1,37 @@
+/* reset */
+body {
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    margin: 0;
+}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Open+Sans:wght@300&display=swap');
+
+.home-title {
+    font-family: 'Merriweather', 'Open Sans', sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
+}
+#logo_link{
+    padding-top: 5px;
+}
+#hero{
+    margin: 0;
+}
+#hero-box{
+    margin:0;
+}
+#hero-img{
+    width:100%;
+}
+
 #content{
-    max-width: 1600px;
+    max-width: 1900px;
     margin: 0 auto;
 }
 nav a{
@@ -26,9 +58,9 @@ header{
     background-color: #19446b;
 }
 nav a{
-    background-color:#7fc0d3;
-    color: black;
+    color: white;
     text-decoration: none;
+    padding: 35px
 }
 nav a:hover{
     background-color:#a8c9d5;
@@ -38,10 +70,21 @@ nav a:hover{
     background-color:#7fc0d3;
     color: black;
     text-decoration: none;
+    padding: 15px 30px;
+    margin-top: 50px;
 }
 .book:hover, .join:hover{
     background-color:#a8c9d5;
     color: black;
+}
+.card-img{
+    border: 10px solid #d9c2a3;
+}
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+}
+main section img {
+    box-sizing: border-box;
 }
 #background{
     background-color: #19446b ;
@@ -53,6 +96,7 @@ nav a:hover{
 footer{
     background-color: #19446b;
     color: white;
+    line-height: 1.5em;
 }
 .home-title{
     color: black;
@@ -60,11 +104,19 @@ footer{
 h4{
     color: black;
 }
+.msg{
+    padding: 35px;
+}
 .msg h2{
     color: black;
 }
 .msg p{
     color: black;
+    padding-bottom: 15px;
+}
+footer{
+    padding: 25px 50px;
+    margin-top: 200px; 
 }
 footer a{
     background-color:#7fc0d3;
@@ -81,6 +133,9 @@ footer p{
 footer p a:hover {
     text-decoration: underline;
 }  
+footer .social img{
+    padding-top: 15px;
+}
 
 /* icon widths */
 .logo{
@@ -88,4 +143,5 @@ footer p a:hover {
 }
 .icon{
     width: 80px;
+    padding-top:10px;
 }
