@@ -49,9 +49,21 @@ header nav a {
   margin: 0 1em;
 }
 
-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
 }
+.navigation a{
+  color: #87CEEB;
+  text-decoration: underline;
+  font-size: 1.4em;
+  margin: 20px;
+}
+.navigation a:hover{
+  color: #A0393B;
+  text-decoration: none ;
+}
+
+
 
 /* Main Content Styles */
 main {
