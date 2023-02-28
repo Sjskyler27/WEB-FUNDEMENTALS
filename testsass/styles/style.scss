@@ -1,0 +1,32 @@
+// Variables
+$primary-color: #333;
+$secondary-color: #fff;
+
+// Mixins
+@mixin classic {
+  text-align: center;
+  margin:auto;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+}
+
+// Base
+body {
+  font-family: sans-serif;
+  background-color: $primary-color;
+  color: $secondary-color;
+  background-color: black;
+}
+
+// Components
+button {
+  @include classic;
+  border: 2px solid $primary-color;
+  background-color: red;
+  color: pink;
+}
+p{
+  @include classic;
+  color: blue;
+}

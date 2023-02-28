@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: auto;
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    width: 30%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+#test{
+    color: red;
+}
+This will apply a font-family, background color, padding, font-size, width, margin, border-radius, and border to the input elements, and a font-size and margin to the p elements.
+
+
+
+
