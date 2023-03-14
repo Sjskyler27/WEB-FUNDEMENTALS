@@ -137,6 +137,8 @@ button:hover {
   width: 200px;
   margin: auto;
   margin-top: 5px;
+  color: #fff;
+  font-size: 25px;
 }
 
 #counter .button {

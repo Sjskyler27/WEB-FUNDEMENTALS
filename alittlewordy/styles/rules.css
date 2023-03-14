@@ -1,3 +1,7 @@
+body{
+    width: 1700px;
+    margin: auto;
+}
 header {
     background-color: #87CEEB;
     color: #fff;
@@ -7,7 +11,7 @@ header {
 /* Define grid layout */
 #content {
     display: grid;
-    width: 1800px;
+    width: 1500px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
     grid-gap: 20px;
@@ -29,7 +33,8 @@ header {
     transition: background-color 0.2s ease-in-out;
     padding: auto;
     position:absolute;
-  margin-top: -90px;
+    margin-top: -90px;
+    margin-left: -1350px;
   }
   
   /* Style each section */
