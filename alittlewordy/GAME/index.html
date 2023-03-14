@@ -8,6 +8,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>A Little Wordy</h1>
+  </header>
+  <br>
+  <div id = content>
+  <a class = "returnbtn"  href="../index.html">Return</a>
     <div id="letter-selection">
         <div id="consonants">
             <!-- <button class="letter"></button>
@@ -38,11 +44,16 @@
   <output id="count">0</output>
   <button id="increment">+</button>
 </div>
-<button id="play-again-button", onclick="populateContainers()">Play Again</button>
+<button id="play-again-button", onclick="populateContainers()", onload="populateContainers()">Click to Play</button>
+<br>
+</div>
 <br>
     <div id="card-container"></div>
 
-
+    <footer>
+      <p>&copy; 2023 A Little Wordy</p>
+      <a href="../site-plan.html" >SITE PLAN AND CONTENT</a>
+    </footer onload = "generateload()">
 </body>
 </html>
 <script>
@@ -160,6 +171,8 @@ const selectedLetters = document.querySelector('#selected-letters');
 // Call the function when the page loads
 window.onload = populateContainers();
 
+//window.onload(document.getElementById("play-again-button").click());
+
 
 
 
@@ -276,11 +289,14 @@ fetch('./cards.json')
     });
   });
 
-
-  document.getElementById("play-again-button").addEventListener('click', () => {
-  //reset other properties of the game 
-  document.getElementById("noteArea").innerHTML = "";
-});
+  function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+};
+  function generateload(){
+    sleep(20);
+      document.getElementById("play-again-button").click();
+      console.log("generate!")
+};
 
 
 //create web socket to make a lobby
